@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html,
+body {
+    background-color: rgba(22, 22, 22, 0.938);
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'segoe ui';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+#animatebody {
+    animation-name: float;
+    animation-duration: 2s;
+}
+
+@keyframes float {
+    0% {
+        margin-top: -50%;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
+
+.latestnews {
+    padding: 5px;
+    margin-top: -25px;
+}
+
+.latestnews>div {
+    padding: 0;
+    font-weight: 500;
+    color: rgb(209, 37, 37);
+}
+
+.latestnews_2 {
+    padding: 16px !important;
+    text-align: left;
+}
+
+.latestnews_2 a {
+    color: white;
+    transition: .50s;
+}
+
+.latestnews_2 a:hover {
+    color: rgb(209, 37, 37);
+}
+
+.headermain {
+    padding: 10px;
+}
+
+.headermain hr {
+    border: 0.5px solid grey;
+}
+
+.socialmedia {
+    padding: 0;
+}
+
+.socialmedia a {
+    color: white;
+    transition: .50s;
+    margin: 5px;
+}
+
+.socialmedia a:hover {
+    color: rgb(146, 25, 25);
+}
+
+.user {
+    padding: 0;
+}
+
+.user>div {
+    padding: 0;
+}
+
+.socialmedia,
+.user {
+    padding-top: 10px;
+}
+
+.user input[type="search"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    color: white;
+    padding: 7px;
+}
+
+.user input[type="search"]:focus {
+    border: 0.5px solid white;
+    user-select: none;
+}
+
+.user button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    transition: .50s;
+    cursor: pointer;
+}
+
+.user button[type="submit"]:hover {
+    color: rgb(146, 25, 25);
+}
+
+#stained {
+    color: black;
+}
+
+.navbar {
+    padding: 0;
+    background-color: rgb(146, 25, 25);
+    margin-top: -15px;
+}
+
+.navbar-brand {
+    text-align: left;
+    padding-left: 15px !important;
+}
+
+.header-menu {
+    padding: 7px;
+}
+
+.header-menu i {
+    cursor: pointer;
+    border: 0.5px solid white;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.close-btn {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+}
+
+.fa-bars {
+    margin-block-start: 22px;
+}
+
+.fa-user {
+    margin-block-start: 9px;
+}
+
+.fa-plus {
+    transform: rotate(45deg);
+    transition: .50s;
+}
+
+.fa-plus:hover {
+    transform: rotate(360deg);
+}
+
+.dropnav {
+    position: fixed;
+    top: 0%;
+    right: -30%;
+    background-color: rgba(22, 22, 22, 0.938);
+    width: 250px;
+    height: 100vh;
+    text-align: left;
+    z-index: 1;
+}
+
+.dropnav {
+    padding: 33.5px;
+}
+
+.dropnav a.navbar-items a {
+    color: white;
+    text-decoration: none;
+    animation-name: drop;
+    animation-duration: 5s;
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 5s;
+    transition: .50s;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes drop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-items a:hover,
+.dropnav a:hover {
+    color: rgb(209, 37, 37);
+}
+
+.current {
+    color: rgb(209, 37, 37) !important;
+}
+
+.current:hover {
+    padding: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.navbar-items a {
+    margin: 10px;
+    padding: 30px;
+}
+
+.site-start-area {
+    border: 1px solid white;
+}
+
+.site-start-area>div {
+    border: 1px solid white;
+}
+
+.single-feature-post {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+}
+
+#post-play {
+    font-size: 60px;
+    padding: 10%;
+    padding-bottom: 0;
+}
+
+.post-type {
+    text-align: left;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.post-type a {
+    background-color: rgb(209, 37, 37);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.post-type a:hover {
+    background-color: rgba(209, 37, 37, 0.788);
+}
+
+.post-title {
+    text-align: left;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.post-title a {
+    font-weight: 500;
+    font-size: large;
+}
+
+.post-duration {
+    text-align: right;
+    padding: 0px;
+}
+
+.post-likes {
+    text-align: left;
+    padding: 0;
+    margin-top: -30px;
+}
